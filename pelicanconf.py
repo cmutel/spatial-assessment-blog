@@ -3,7 +3,7 @@
 
 AUTHOR = u"Chris Mutel"
 SITENAME = u"Spatial Assessment"
-SITEURL = ''
+SITEURL = 'http://chris.mutel.org'
 SITESUBTITLE = "weblog of Chris Mutel"
 TIMEZONE = 'Europe/Paris'
 
@@ -27,3 +27,5 @@ DISPLAY_PAGES_ON_MENU = False
 PLUGINS = ["latex"]
 FEED_ATOM = False
 FEED_RSS = False
+DISQUS_SITENAME = "spatialassessment"
+GOOGLE_ANALYTICS = "UA-36804441-1"
