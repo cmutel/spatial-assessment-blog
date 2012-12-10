@@ -10,10 +10,15 @@ TIMEZONE = 'Europe/Paris'
 DEFAULT_LANG = 'en'
 
 # Blogroll
-LINKS =  (('Me@ESD group', 'http://www.ifu.ethz.ch/ESD/people/cmutel'),
-          ('My publications', 'http://scholar.google.ch/citations?user=SJiuf-MAAAAJ'),
-          ('My code', 'https://bitbucket.org/cmutel/'),
-          ('Brightway2', 'http://brightwaylca.org'),)
+LINKS = (
+    ('ESD group', 'http://www.ifu.ethz.ch/ESD/index_EN'),
+    ('Me@ESD group', 'http://www.ifu.ethz.ch/ESD/people/cmutel/index_EN'),
+    ('My publications', 'http://scholar.google.ch/citations?user=SJiuf-MAAAAJ'),
+    ('My code', 'https://bitbucket.org/cmutel/'),
+    ('Brightway2', 'http://brightwaylca.org'),
+    ('Source for this blog', 'https://bitbucket.org/cmutel/spatial-assessment-blog')
+)
+
 
 # Social widget
 # SOCIAL = (('You can add links in your config file', '#'),
