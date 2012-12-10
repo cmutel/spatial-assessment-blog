@@ -16,7 +16,8 @@
 /***** Global *****/
 /* Body */
 body {
-    background: #F5F4EF;
+    background-image: url('../images/background.png');
+    background-repeat: repeat;
     color: #000305;
     font-size: 87.5%; /* Base font size: 14px */
     font-family: 'Trebuchet MS', Trebuchet, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
