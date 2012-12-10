@@ -110,7 +110,7 @@ We also want to create a matrix of data showing how each impact assessment metho
 
 The complete source code can be found at the `repository <https://bitbucket.org/cmutel/spatial-assessment-blog/src/5b94c4949ff621a6b86130d8d2109747eed05b5d/examples/correlated-methods>`_ for this blog. Every change and post is stored in version control.
 
-Here is a figure from the three least-correlated impact assessment methods; there are still clear patterns of correlation in activity scores to be found. You can also download a larger figure for the `six least correlated methods here <images/impact-correlation.png>`_.
+Here is a figure from the three least-correlated impact assessment methods; there are still clear patterns of correlation in activity scores to be found. You can also download a larger figure for the `six least correlated methods here <images/method-correlation.png>`_.
 
 .. image:: images/correlation-small.png
 
