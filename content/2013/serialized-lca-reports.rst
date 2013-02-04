@@ -1,12 +1,12 @@
-New feature: LCA calculations are now saved
-###########################################
+Brightway2: LCA calculations are now saved, and report server is online
+#######################################################################
 
-:date: 2013-01-29 12:00
+:date: 2013-02-04 12:00
 :category: brightway2
 :slug: serialized-lca-reports
 :summary: LCA calculations in Brightway2 are now saved, opening many new possibilities.
 
-Changesets `e706dc3 <https://bitbucket.org/cmutel/brightway2-analyzer/commits/e706dc3b7c1c75ba744d5c860ed300b9>`_ and `cf0db1e <https://bitbucket.org/cmutel/brightway2-ui/commits/cf0db1e1db0a94ce1fc4b5bfca8d0708>`_ introduce a new way to make LCA calculations in Brightway2. Previously, a user pressed the **calculate** button, and an LCA calculation was made and formatted into a web page. There is nothing wrong with this, but we can do better. 
+Changesets `e706dc3 <https://bitbucket.org/cmutel/brightway2-analyzer/commits/e706dc3b7c1c75ba744d5c860ed300b9>`_ and `cf0db1e <https://bitbucket.org/cmutel/brightway2-ui/commits/cf0db1e1db0a94ce1fc4b5bfca8d0708>`_ introduce a new way to make LCA calculations in Brightway2. Previously, a user pressed the **calculate** button, and an LCA calculation was made and formatted into a web page. There is nothing wrong with this, but we can do better.
 
 Separating presentation and content
 ===================================
@@ -15,23 +15,48 @@ One key concept in both the planning of Brightway2 and computer science in gener
 
 This separation of presentation (the display of the result tables and graphs) from the content (the underlying data) is a very good thing for a number of reasons.
 
-#. It allows LCA results to computed asynchronously, meaning that other operations can be performed while an LCA is in progress, that LCA calculations can be queued, and that LCA calculations can be thought of as a web service instead of part of a specific web UI.
-#. It allows LCA results to be displayed in different ways. Anyone can write their own LCA report page. The results format is in a language-agnostic format, and is simple and well-defined.
-#. It makes writing tests for correct behaviour easier, ensuring that results are more correct over time.
+#. It allows results to be uploaded and formatted in different ways for different audiences.
+#. It allows LCA results to be displayed in different ways. Anyone can write their own LCA web report page, with no knowledge of Brightway2 or Python (only javascript, CSS, and HTML) - or you can process the report data in any other language or fashion you like! The results data is in JSON, which well-supported by every modern programming language, and is simple and well-defined.
 #. It makes it easier for people to contribute, because the results calculator and display code are independent of each other.
-#. It allows results to be uploaded to a separate virtual of physical location for later display.
+#. It allows LCA results to computed asynchronously, meaning that other operations can be performed while an LCA is in progress, that LCA calculations can be queued, and that LCA calculations can be thought of as a web service instead of part of a specific web UI.
+#. It makes writing tests for correct behaviour easier, ensuring that results are more correct over time.
 
-This later reason might seem simple, and it isn't especially complex, but it is a big step towards making Brightway2 a platform for LCA calculations.
+This is a big step towards making Brightway2 a platform for LCA calculations.
 
-A preview of coming functionality
-=================================
+reports.brightwaylca.org
+========================
 
-Coming soon to Brightway2: report uploads! There will be a separate Python program (which won't have any dependencies on Brightway2) which will accept uploaded report data, and generate web reports from uploaded data. I also plan to open http://reports.brightwaylca.org (this isn't live yet, so the link doesn't work) for people to upload reports if they so desire.
+Report data can now be uploaded to http://reports.brightwaylca.org, or a different server under your control. By defult, report uploading is turned off, but it can be configured in Brightway2's settings. The report server is a completely separate program, and has no dependencies on Brightway2. This program is, of course, open source, and the source code is up on https://bitbucket.org/cmutel/brightway2-web-reports.
+
+Installation of the report server
+---------------------------------
+
+Open a terminal window (command shell in Windows), and type the following:
+
+.. code-block:: bash
+
+    pip install bw2webreports
+
+Configuration of the report server
+----------------------------------
+
+The web server is a very simple `Flask <http://flask.pocoo.org>`_ server. It has one mandatory parmeter: the data directory where you want to store the uploaded report data. It is run like this:
+
+.. code-block:: bash
+
+    bw2-report-server.py <data-dir>
+
+Where *<data-dir>* is the absolute path to whatever directory you want to use. The user starting the report server must have read and write access to this directory. In addition, you can specify the following optional parameters:
+
+* **--port=<port-number>**: Specify the port number (default is 8000)
+* **--local**: Only allow local connections (if you want to limit the report server to only listen to *localhost*).
+
+Note that, by default, the report server accepts outside connections.
 
 How to upgrade
 ==============
 
-Open a terminal window (command shell in Windows), and type the following:
+You can upgrade to the latest version of all Brightway2 packages by opening a terminal window (command shell in Windows), and type the following:
 
 .. code-block:: bash
 
