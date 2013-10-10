@@ -74,3 +74,5 @@ Weighting uncertainty
 Brightway2 has already had the ability to include stochastic LCIA characterization factors for a while; 0.10 adds stochastic weighting. `Stephan Pfister <http://www.ifu.ethz.ch/staff/stpfiste/index_EN>`_ and I are investigating the importance of weighting uncertainty using the LIME2 LCIA method.
 
 The foundation for stochastic normalization was also introduced, but not implemented in any Monte Carlo class.
+
+This code builds on earlier work prototyped in a separate blog post <http://chris.mutel.org/new-example-weighting-and-normalization.html>`_
