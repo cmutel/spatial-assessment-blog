@@ -21,6 +21,8 @@ Presentations
 
 * `Using online scientific notebooks for LCA calculations <images/ipython-notebooks-handout.pdf>`_
 * `Regionalized inventory data and LCIA with ecospold2 <images/ecoinvent-3-geo-handout.pdf>`_
+* `Effects of distribution choice on the modeling of LCI uncertainty <images/effects-distribution-choices.pdf>`_
+* `Offshoring: A new methodology for complex and spatial LCA calculations <images/offshore-presentation.pdf>`_
 
 Posters
 =======
