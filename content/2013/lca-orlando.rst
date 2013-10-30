@@ -12,7 +12,7 @@ LCA conference Orlando 2013
 
     Figure 1: Actual Portofino, Italy. Credit: `MarcoAle <http://www.flickr.com/photos/66647015@N06/7624387882/>`_.
 
-The `LCA XIII <http://www.lcacenter.org/LCAXIII.aspx>`_ conference took place in Orlando, Florida, from September 30th to October 3rd, 2013. Although ETH Zürich sent only Stephan Pfister and myself; however, we were quite active, with (at least) five presentations, four posters, and a half-day educational class.
+The `LCA XIII <http://www.lcacenter.org/LCAXIII.aspx>`_ conference took place in Orlando, Florida, from September 30th to October 3rd, 2013. ETH Zürich sent only Stephan Pfister and myself; however, we were quite active, with (at least) five presentations, four posters, and a half-day educational class.
 
 Below, I include my posters and presentations.
 
@@ -23,6 +23,8 @@ Presentations
 * `Regionalized inventory data and LCIA with ecospold2 <images/ecoinvent-3-geo-handout.pdf>`_
 * `Effects of distribution choice on the modeling of LCI uncertainty <images/effects-distribution-choices.pdf>`_
 * `Offshoring: A new methodology for complex and spatial LCA calculations <images/offshore-presentation.pdf>`_
+
+.. note:: The pedigree matrix poster has been updated to fix some bugs. Thanks to `Bernhard Steubing <http://www.ifu.ethz.ch/staff/bsteubin>`_ for noticing!
 
 Posters
 =======
