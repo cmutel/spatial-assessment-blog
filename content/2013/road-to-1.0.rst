@@ -28,9 +28,11 @@ Database and method explorer
 
 Status: **finished!**
 
-I have already made some progress integrating a `very cool json editor <http://www.jsoneditoronline.org/>`_, which allows editing datasets through the web. However, it would be much nicer to have a way to quickly browse through a number of datasets, filter them, and then see the dataset in more detail. A similar explorer can be built for LCIA methods.
+There is now the following:
 
-This will probably require a different implementation of the datatable - see the associated `bug report <https://bitbucket.org/cmutel/brightway2-ui/issue/2/new-data-table>`_.
+* `Activity browser CLI application <https://www.youtube.com/watch?v=Dw3s5K8OsM0>`_.
+* Clickable activyt and method webpages with `new datatable implementation <https://bitbucket.org/cmutel/brightway2-ui/issue/2/new-data-table>`_ based on `backgrid <http://backgridjs.com/>`_.
+* Raw activity and method JSON data display built on a `very cool json editor <http://www.jsoneditoronline.org/>`_.
 
 Reworked treemap
 ================
