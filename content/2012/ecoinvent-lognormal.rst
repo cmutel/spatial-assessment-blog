@@ -48,7 +48,7 @@ The geometric mean of a lognormally-distributed dataset, is defined as the expon
 However, the geometric mean is not the *mean* of the dataset values, but rather the *median* (this might be where things start to get confusing - it sure was for me!). The *mean* of the un-transformed data is instead:
 
 .. math::
-    median = e^{\mu + \frac{1}{2}\sigma^{2}}
+    mean = e^{\mu + \frac{1}{2}\sigma^{2}}
 
 Now you should understand why a static LCA calculation, which uses the median values for all lognormally distributed random variables, will give a smaller answer than the average Monte Carlo result.
 
@@ -85,7 +85,7 @@ Although the pedigree matrix is currently defined only for the lognormal distrib
 
 One final important note: we showed earlier that the mean of a lognormal distribution (not of the underlying normal distribution, but of the actually lognormally distributed values) is a function of both μ and σ. This means that while the application of the pedigree matrix doesn't shift the median, it does **increase** the average value.
 
-.. [2] Limpert, E., Stahel, W. A., & Abbt, M. (2001). Log-normal distributions across the sciences: Keys and clues. BIOSCIENCE, 51(5), 341--352. http://stat.ethz.ch/~stahel/lognormal/bioscience.pdf 
+.. [2] Limpert, E., Stahel, W. A., & Abbt, M. (2001). Log-normal distributions across the sciences: Keys and clues. BIOSCIENCE, 51(5), 341--352. http://stat.ethz.ch/~stahel/lognormal/bioscience.pdf
 
-.. [3] Frischknecht, R., Jungbluth, N., Althaus, H.-J., Doka, G., Dones, R., Heck, T., Hellweg, S., Hischier, R., Nemecek, T., Rebitzer, G., Spielmann, M., & Wernet, G. (2007). Ecoinvent 2.0: Overview and Methodology. ecoinvent Centre. http://www.ecoinvent.org/fileadmin/documents/en/01_OverviewAndMethodology.pdf 
+.. [3] Frischknecht, R., Jungbluth, N., Althaus, H.-J., Doka, G., Dones, R., Heck, T., Hellweg, S., Hischier, R., Nemecek, T., Rebitzer, G., Spielmann, M., & Wernet, G. (2007). Ecoinvent 2.0: Overview and Methodology. ecoinvent Centre. http://www.ecoinvent.org/fileadmin/documents/en/01_OverviewAndMethodology.pdf
 
