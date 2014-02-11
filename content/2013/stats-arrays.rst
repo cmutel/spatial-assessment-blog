@@ -4,6 +4,7 @@ New statistical library: ``stats_arrays``
 :date: 2013-07-03 12:00
 :category: brightway2
 :slug: stats-arrays
+:tags: notable
 :summary: A new statistical framework for Brightway2.
 
 A new way to work with and store uncertainty values

@@ -4,6 +4,7 @@ Correlation among impact assessment scores for ecoinvent 2.2
 :date: 2012-12-10 22:00
 :category: brightway2
 :slug: impact-assessment-correlation
+:tags: notable
 :summary: Using Brightway2 to calculate correlation of impact assessment scores for ecoinvent 2.2
 
 One important question in life cycle assessment (LCA) is whether the different indicators developed in the last two decades produce different different results from each other. Life cycle assessment covers a large variety of different environmental categories; here is a partial list:
@@ -26,7 +27,7 @@ In this post I want to briefly show you how to calculate the correlation of diff
 
 First, we should remember a bit about LCA math. The key equation is:
 
-.. math:: 
+.. math::
     h = C B A^{-1}f
 
 On my laptop, Brightway2 should take about 0.4 seconds to do an LCA calculation. Ecoinvent 2.2 has about 4000 activities (and we will look at all of them), and we want to assess about 100 impact assessment methods, so we should think about what we can do to make this go a bit more quickly. First, we can factorize the technosphere matrix **A**; this will make solving the linear equation `A^{-1}f` *very* fast. Here is the setup code:
@@ -99,7 +100,7 @@ We also want to create a matrix of data showing how each impact assessment metho
             data1 = output[:, row]
             data2 = output[:, col]
             pbar.update(count.next())
-            # Don't include 0 values, as there is no correlation 
+            # Don't include 0 values, as there is no correlation
             # information present.
             mask = (data1 != 0) * (data2 != 0)
             if mask.sum() == 0:

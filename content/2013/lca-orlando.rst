@@ -4,6 +4,7 @@ LCA conference Orlando 2013
 :date: 2013-10-10 14:00
 :category: uncertainty
 :slug: lca-orlando-2013
+:tags: talks
 :summary: Posters and presentations given at LCA 2013 in Orlando, Florida
 
 .. figure:: images/portofino.jpg

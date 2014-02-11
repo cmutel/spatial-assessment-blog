@@ -3,6 +3,7 @@ Talk at SETAC Glasgow on regionalization
 
 :date: 2013-05-16 12:00
 :category: regionalization
+:tags: talks
 :slug: setac-glasgow
 :summary: An annotated set of slides from my SETAC 2013 presentation in Glasgow
 

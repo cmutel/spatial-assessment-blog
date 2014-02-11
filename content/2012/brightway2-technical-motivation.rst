@@ -4,6 +4,7 @@ Brightway2 - the technical motivation
 :date: 2012-12-02 12:00
 :category: brightway2
 :slug: brightway2-technical-motivation
+:tags: notable
 :summary: The technical reasons for the development of Brightway2
 
 I spent years of my PhD working on what became Brightway version 1. In this post, I want to talk briefly about the technical reasons for starting over with Brightway2. `Brightway2 <http://brightwaylca.org>`_ is a set of packages which together act as a framework for LCA computations, visualization, and interpretation.

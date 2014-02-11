@@ -4,6 +4,7 @@ Visualizing Ecoinvent 2.2
 :date: 2012-11-29 12:00
 :category: visualization
 :slug: visualizing-ecoinvent
+:tags: notable
 :summary: Visualizing the technosphere matrix of Ecoinvent using Brightway2 and Gephi
 
 Ecoinvent 2.2 is a large and complex system (and Ecoinvent 3 will certainly be larger and more complex). The technosphere matrix of Ecoinvent has about 4000 activities, and 40000 links between those activities. The biosphere matrix has another 60000 links from activities to biosphere flows, but it is harder to visualize, so we ignore it for now.

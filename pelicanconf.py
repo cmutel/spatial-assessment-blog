@@ -11,12 +11,15 @@ DEFAULT_LANG = 'en'
 
 # Blogroll
 LINKS = (
-    ('ESD group', 'http://www.ifu.ethz.ch/ESD/index_EN'),
+    ('Notable posts', 'http://chris.mutel.org/tag/notable/index.html'),
+    # ('ESD group', 'http://www.ifu.ethz.ch/ESD/index_EN'),
     ('Me@ESD group', 'http://www.ifu.ethz.ch/ESD/people/cmutel/index_EN'),
+    ('Brightway2', 'http://brightwaylca.org'),
+    ('Source for this blog', 'https://bitbucket.org/cmutel/spatial-assessment-blog'),
     ('My publications', 'http://scholar.google.ch/citations?user=SJiuf-MAAAAJ'),
     ('My code', 'https://bitbucket.org/cmutel/'),
-    ('Brightway2', 'http://brightwaylca.org'),
-    ('Source for this blog', 'https://bitbucket.org/cmutel/spatial-assessment-blog')
+    ('My talks', 'http://chris.mutel.org/tag/talks/index.html'),
+    ('My videos', 'https://www.youtube.com/user/chrismutel/videos'),
 )
 
 
@@ -34,3 +37,6 @@ FEED_ATOM = False
 FEED_RSS = False
 DISQUS_SITENAME = "spatialassessment"
 GOOGLE_ANALYTICS = "UA-36804441-1"
+
+TAG_URL = "tag/{slug}/"
+TAG_SAVE_AS = "tag/{slug}/index.html"

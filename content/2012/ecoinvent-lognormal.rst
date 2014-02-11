@@ -4,6 +4,7 @@ Why does the ecoinvent database love the lognormal distribution?
 :date: 2013-01-14 00:00
 :category: uncertainty
 :slug: ecoinvent-lognormal
+:tags: notable
 :summary: The reason that the lognormal is the predominant uncertainty distribution in the ecoinvent database.
 
 Uncertainty in ecoinvent

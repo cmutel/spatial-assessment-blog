@@ -4,6 +4,7 @@ Some thoughts on Ecoinvent geographies
 :date: 2014-02-06 12:00
 :category: ecoinvent
 :slug: thoughts-ecoinvent-geo
+:tags: notable
 :summary: Some thoughts on geogrpahies and geographical data in Ecoinvent version 3
 
 .. figure:: images/louisiana.png

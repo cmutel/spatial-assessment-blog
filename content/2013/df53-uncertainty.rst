@@ -4,6 +4,7 @@ LCA discussion forum 53: Uncertainty
 :date: 2013-09-18 12:00
 :category: uncertainty
 :slug: df53-uncertainty
+:tags: talks
 :summary: LCA discussion forum 53 was held on September 13, 2013, and focused on uncertainty.
 
 .. figure:: images/sigmas.jpg
