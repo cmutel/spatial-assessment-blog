@@ -29,10 +29,11 @@ LINKS = (
 
 DEFAULT_PAGINATION = 10
 STATIC_PATHS = ['images']
-TYPOGRIFY = True
+TYPOGRIFY = False
 THEME = "theme"
 DISPLAY_PAGES_ON_MENU = False
 PLUGINS = ["latex"]
+# PLUGINS = ["render_math"]
 FEED_ATOM = False
 FEED_RSS = False
 DISQUS_SITENAME = "spatialassessment"
