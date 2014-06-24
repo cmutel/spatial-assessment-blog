@@ -2,7 +2,7 @@ Ecoinvent 3 in Brightway2
 #########################
 
 :date: 2014-06-24 00:00
-:category: math
+:category: brightway2
 :slug: multioutput
 :summary: Ecoinvent 3 is now usable in Brightway2
 
