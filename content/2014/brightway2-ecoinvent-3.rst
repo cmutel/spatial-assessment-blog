@@ -3,7 +3,7 @@ Ecoinvent 3 in Brightway2
 
 :date: 2014-06-24 00:00
 :category: brightway2
-:slug: multioutput
+:slug: ecoinvent3
 :summary: Ecoinvent 3 is now usable in Brightway2
 
 .. figure:: images/friendship2.jpg
