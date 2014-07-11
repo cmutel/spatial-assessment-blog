@@ -1,6 +1,8 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
 
+# For Pelican version 3.0.1
+
 AUTHOR = u"Chris Mutel"
 SITENAME = u"Spatial Assessment"
 SITEURL = 'http://chris.mutel.org'
