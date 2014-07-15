@@ -17,13 +17,9 @@ Version 1.0 of `Brightway2-data <https://bitbucket.org/cmutel/brightway2-data>`_
 Ecoinvent 3 system models
 =========================
 
-Brightway2 supports all three system models - default, consequential, and cutoff. However, each system model has its own quirks.
+.. note:: Updated for ecoinvent 3.1
 
-The details of each system model are described in detail by the ecoinvent centre.
-
-* Cutoff: This is the newest system model, released only recently, and imports without any problems or known issues.
-* Consequential: This system model imports cleanly, aside from the `known issues <http://www.ecoinvent.org/database/ecoinvent-version-3/reports-of-changes/known-data-issues/>`_.
-* Default: In addition to the `known issues <http://www.ecoinvent.org/database/ecoinvent-version-3/reports-of-changes/known-data-issues/>`_, the process ``market for methane, 96% by volume, from biogas, low pressure, at user`` (file ``35603b32-0774-4805-ab0f-a446bfe989b8_df713085-e762-4edb-b02f-cc2b274ffab5.spold`` does not import cleanly. This activity links to flows which are not provided by their specified activities, and this activity is not imported cleanly in SimaPro 8.02 either.
+Brightway2 supports all three system models - default, consequential, and cutoff. The `known issues <http://www.ecoinvent.org/database/ecoinvent-version-3/reports-of-changes/known-data-issues/>`_ seem to all be resolved, though 3.1 introduces a few small issues itself (two steps forward, one step back, and all that). As in 3.01, the "cutoff" system imports with no linking problems; both "consequential, longterm" and "default" have a few linking problems.
 
 Importing Ecoinvent 3
 =====================
@@ -58,7 +54,7 @@ The existing LCIA method only link to the default ``biosphere`` database. New LC
 
 These new methods have the same name as the previous methods, with the addition of ``ecoinvent3`` at the end, e.g. ``('IPCC 2007', 'climate change', 'GWP 100a')`` becomes ``('IPCC 2007', 'climate change', 'GWP 100a', 'ecoinvent3')``.
 
-With the coming release of ecoinvent 3.1, I will probably create a unified biosphere database and set of LCIA methods.
+I am still deciding the best way to handle the different ways of identifying biosphere flows (ecoinvent 2 versus 3), so for the time being there will be two different databases. The problem with just smashing the two databases together is that one would have the same dataset represented by two different identifiers, which could be problematic in many ways.
 
 Caveats
 =======
