@@ -70,8 +70,8 @@ Allocation
 
 Allocation means splitting multioutput processes into single output unit processes (aka SOUPs) using physical, economic, or other criteria. Allocation has been and is the subject of much debate in the LCA literature, but isn't discussed further here.
 
-System expansion
-----------------
+Include all outputs in demand
+-----------------------------
 
 The easiest solution is to hit yourself on the head, and say that of course you simply can't get electricity without electricity from a CHP plant, or leather without beef, or kids without having your laptop peed on somehow (at least in my experience). Instead, you include all the products in the correct respective quantities in the demand vector itself, i.e. for example system:
 
@@ -84,11 +84,11 @@ The easiest solution is to hit yourself on the head, and say that of course you 
 .. math::
     CHP = 1
 
-Mathematically, system expansion makes a matrix which does not have full rank (i.e. not all rows are linearly independent - the first row is a copy of the second row), and as such the system is longer overdetermined. There is actually only one equation and one variable.
+Mathematically, this approach makes a matrix which does not have full rank (i.e. not all rows are linearly independent - the first row is a copy of the second row), and as such the system is longer overdetermined. There is actually only one equation and one variable.
 
-System expansion is certainly the most representative of the real world, but is difficult to do when the multioutput processes are in the background, or when there are many multioutput processes. You have to get the stoichiometry of the demand array correct to get a solution, but if your multioutput process is a few levels deep in your supply chain, you would need to calculate how much of that process is needed, and then adjust your demand array for the necessary additional products.
+Including all outputs is certainly the most representative of the real world, but is difficult to do when the multioutput processes are in the background, or when there are many multioutput processes. You have to get the stoichiometry of the demand array correct to get a solution, but if your multioutput process is a few levels deep in your supply chain, you would need to calculate how much of that process is needed, and then adjust your demand array for the necessary additional products.
 
-Note that system expansion does not require substitution, a subject which is discussed in the next section.
+Note that altering the demand vector does not require substitution, a subject which is discussed in the next section.
 
 Substitution
 ------------
