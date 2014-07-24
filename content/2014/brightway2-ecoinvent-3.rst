@@ -44,20 +44,12 @@ Because the import ecoinvent 3 consumes a lot of memory, you should probably res
 Impact assessment methods
 =========================
 
-The existing LCIA method only link to the default ``biosphere`` database. New LCIA methods need to be installed to calculate LCA results using ecoinvent 3:
+The existing LCIA method only link to the default ``biosphere`` database. Luckily, we have new LCIA methods that link to both the ``biosphere`` and ``biosphere3`` databases and include updated CF values from the ecoinvent centre. They can be installed like this:
 
 .. code-block:: python
 
     from bw2data.io import BW2Package
     from bw2data.utils import download_file
-    BW2Package.import_file(download_file("lcia-ecoinvent3.bw2package"))
+    BW2Package.import_file(download_file("methods.bw2package"))
 
-These new methods have the same name as the previous methods, with the addition of ``ecoinvent3`` at the end, e.g. ``('IPCC 2007', 'climate change', 'GWP 100a')`` becomes ``('IPCC 2007', 'climate change', 'GWP 100a', 'ecoinvent3')``.
-
-I am still deciding the best way to handle the different ways of identifying biosphere flows (ecoinvent 2 versus 3), so for the time being there will be two different databases. The problem with just smashing the two databases together is that one would have the same dataset represented by two different identifiers, which could be problematic in many ways.
-
-Caveats
-=======
-
-* Uncertainty data is not yet imported (this is on the todo list)
-* Parameters are not imported
+Existing methods with the same names (i.e. everything except new IA methods you created yourself) will be backed up to the ``exports`` folder.
