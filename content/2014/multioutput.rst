@@ -1,7 +1,7 @@
 Multioutput processes in LCA
 ############################
 
-:date: 2014-06-19 00:00
+:date: 2014-08-09 00:00
 :category: math
 :slug: multioutput
 :summary: Multioutput processes can be used in LCA in limited circumstances.
