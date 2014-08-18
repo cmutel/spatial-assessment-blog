@@ -4,6 +4,7 @@ What happens with a non-unitary production amount in LCA?
 :date: 2014-04-17 00:00
 :category: math
 :slug: non-unitary
+:tags: notable
 :summary: Non-unitary production amounts must be treated carefully, as they can be confusing.
 
 .. figure:: images/snail.png
