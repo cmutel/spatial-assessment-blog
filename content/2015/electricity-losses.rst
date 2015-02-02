@@ -45,10 +45,10 @@ It is worth repeating that we know the *absolute amount* of $Avail_{0}$, $Loss_{
 Some math
 =========
 
-We can write the general formula for available electricity as:
+We can write the general formula for available electricity at step *n* as:
 
 .. math::
-    Avail_{n} = Avail_{0} - \Sum_{i=1}^{n} Loss_{i} - \Sum_{i=1}^{n} Use_{i}
+    Avail_{n} = Avail_{0} - \sum_{i=1}^{n} Loss_{i} - \sum_{i=1}^{n} Use_{i}
 
 Makes sense - the total available at any point is what we started with, minus losses and what was used. What about the *relative* amount of electricity lost at any particular point in the value chain? This is the number we need on ecoinvent - the fraction of one kilowatt hour gross availability which is lost. This *loss coefficient* (LC) is also quite easy to define:
 
@@ -87,7 +87,7 @@ Cumulative losses
 Sometimes we want to know how much electricity is lost throughout the value chain; say, for example, you were curious how much electricity had to be generated to get 1 kilowatthour of medium voltage electricity supplied. In this case, we don't want the loss coefficient, but rather $1 - LC$, the amount of electricity provided after losses. We need to multiply this amount for each step where electricity is lost - it is just like interest from the bank, but in reverse. The formula for total fractional loss at step *n* is therefore:
 
 .. math::
-    TotalLossCoefficient_{n} = 1 - \Product_{i=1}^{n} \( 1 - LC_{i} \)
+    TotalLossCoefficient_{n} = 1 - \prod_{i=1}^{n} \big( 1 - LC_{i} \big)
 
 The total loss coefficient for Lithuania for usage of medium voltage would include transformation and transmission losses for high and medium voltage, and would therefore be (with some rounding):
 
@@ -96,4 +96,4 @@ The total loss coefficient for Lithuania for usage of medium voltage would inclu
 
 In words, the generation of 1 kilowatt hour of electricity would produce only 1 - 0.0473 kilowatt hours of medium voltage electricity at the busbar ("at the busbar" is what you say when you pretend to know something about electrical engineering).
 
-Note that this value is **not** applicable to other countries, but depends on the ratio of total generation to total losses.
+Note that this value is **not** applicable to other countries, but depends on the country-specific ratio of total generation to total losses.
