@@ -5,7 +5,6 @@ Modeling electricity losses in ecoinvent
 :category: ecoinvent
 :slug: electricity-losses
 :summary: Modeling and propagating electricity losses in ecoinvent
-:status: draft
 
 Input data and framework
 ========================
