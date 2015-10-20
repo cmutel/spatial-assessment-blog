@@ -1,10 +1,10 @@
-LCA seminar - Introduction and class 1
-######################################
+2015 advanced LCA seminar
+#########################
 
 :date: 2015-09-22 00:00
 :category: lca-seminar
 :slug: 2015-class-1
-:summary: Introduction to the advanced LCA seminar class
+:summary: The 2015 advanced LCA seminar
 
 Advanced LCA Seminar
 ====================
@@ -17,22 +17,45 @@ The goal this year is to make a small toy model in each class session (the class
 
 #. Introduction. Installation of BW2. Initial calculations.
 #. Optimization. Simple optimizer in Python.
-#. Sensitivity. Local and global sensitivity, probably based on a simple physical model of a car.
 #. Machine learning. Classification and feature selection.
+#. Sensitivity. Local and global sensitivity, probably based on a simple physical model of a car.
 #. Assessing large systems. Processing data from `Matsim <http://www.matsim.org/>`__.
-#. Integration. Field trip to P2G. `Calliope <http://www.callio.pe/>`__.
+#. Integration. `Calliope <http://www.callio.pe/>`__.
 #. Economic models. IO tables (EXIOBASE). Filling in the holes from ecoinvent.
 
-The order for classes 4-7 is not finalized, and will depend on how classes 1-3 go.
+The order for classes is not finalized, and will depend on how the seminar progresses.
 
 Online and open classes
 =======================
 
 My intention is to make all data and code used in the course open, and published online in this blog. We will use the ecoinvent database, which is a pretty big exception to the previous statement, as it is not freely available, but I don't see a way around this rather glaring contradiction for now. Unfortunately, the few free life cycle inventory databases are not good enough for what we want to do.
 
-Class 1
-=======
+Each class with follow a `Jupyter notebook <https://jupyter.org/>`__. You can download the `current set of notebooks <http://brightwaylca.org/data/LCA%20seminar%202015%20notebooks.zip>`__. Note that the notebooks will require `Brightway2 <http://brightwaylca.org/>`__; please follow the `installation guide <http://brightwaylca.org/dev-docs/installation.html>`__.
 
-This class will introduce LCA, and we will follow the `installation guide <http://brightwaylca.org/dev-docs/installation.html>`__ for Brightway2. Don't forget to set up a notebooks directory after doing the basic installation.
+Running the notebook server
+---------------------------
 
-In this class, we will follow `notebook 1 - introduction <http://nbviewer.ipython.org/urls/bitbucket.org/cmutel/brightway2/raw/2.0/notebooks/2015%20LCA%20Seminar%20-%20Class%201%20-%20Introduction.ipynb>`__, which you should download and open now. Note that we are using version 2.2 of ecoinvent because we are doing the exercise in class, and importing and calculating with 2.2 is faster.
+The easiest way to open the notebooks on Windows is to drag a copy of the ``bw2-notebook.bat`` script from ``C:\bw2-python\`` to wherever you extracted the notebooks, and then to run the script. On OS X, enter the following into the Terminal:
+
+.. code-block:: bash
+
+    source ~/bw2-python/bin/activate bw2
+    cd path/to/extracted/folders
+    jupyter notebook
+
+Class 1 - Introduction
+======================
+
+This class will introduce LCA and Brightway2. Don't forget to set up a notebooks directory after doing the basic installation.
+
+In this class, we will follow notebook 1, which you should download and open now (see link above). Note that we are using version 2.2 of ecoinvent because we are doing the exercise in class, and importing and calculating with 2.2 is faster than with 3.x.
+
+Class 2 - Optimization
+======================
+
+In this class, we construct a basic agent model of transport choices, and then do basic optimization for different criteria using `Scipy optimize <http://docs.scipy.org/doc/scipy/reference/optimize.html>`__.
+
+Class 3 - Classification
+========================
+
+In this class we link a physics model of motorcycle dynamics with ecoinvent, and use a few of the functions from `scikit-learn <http://scikit-learn.org/>`__ to classify the motorcycles in our database.
