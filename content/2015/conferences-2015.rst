@@ -13,7 +13,7 @@ If there is no linked file, I haven't annotated the presentation yet. Sorry.
 ISIE (Guildford, England)
 =========================
 
-Brightway2: A new contribution to open source industrial ecology
+`Brightway2: A new contribution to open source industrial ecology <images/2015-isie-brightway2.pdf>`__
 
 `Brightway2-temporalis: A simple approach to temporal LCA calculations <images/2015-isie-bw2-temporalis.pdf>`__
 
