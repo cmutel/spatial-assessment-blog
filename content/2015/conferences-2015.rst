@@ -23,7 +23,7 @@ LCM (Bordeaux, France)
 Regionalized assessment using LC IMPACT and ecoinvent: Case study of
 electricity production
 
-Transforming ecoinvent for fun and profit
+`Transforming ecoinvent for fun and profit <images/2015-lcm-manipulating-ecoinvent.pdf>`__
 
 LCA (Vancouver, Canada)
 =======================
