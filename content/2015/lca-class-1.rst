@@ -1,7 +1,7 @@
 2015 advanced LCA seminar
 #########################
 
-:date: 2015-09-22 00:00
+:date: 2015-11-02 00:00
 :category: lca-seminar
 :slug: 2015-class-1
 :summary: The 2015 advanced LCA seminar
@@ -46,6 +46,8 @@ The easiest way to open the notebooks on Windows is to drag a copy of the ``bw2-
 Class 1 - Introduction
 ======================
 
+`Class 1 notebook <http://nbviewer.ipython.org/urls/bitbucket.org/cmutel/brightway2/raw/2.0/notebooks/2015%20LCA%20Seminar%20-%20Class%201%20-%20Introduction.ipynb>`__
+
 This class will introduce LCA and Brightway2. Don't forget to set up a notebooks directory after doing the basic installation.
 
 In this class, we will follow notebook 1, which you should download and open now (see link above). Note that we are using version 2.2 of ecoinvent because we are doing the exercise in class, and importing and calculating with 2.2 is faster than with 3.x.
@@ -53,9 +55,20 @@ In this class, we will follow notebook 1, which you should download and open now
 Class 2 - Optimization
 ======================
 
+`Class 2 notebook <http://nbviewer.ipython.org/urls/bitbucket.org/cmutel/brightway2/raw/2.0/notebooks/2015%20LCA%20Seminar%20-%20Class%202%20-%20Optimization.ipynb>`__
+
 In this class, we construct a basic agent model of transport choices, and then do basic optimization for different criteria using `Scipy optimize <http://docs.scipy.org/doc/scipy/reference/optimize.html>`__.
 
 Class 3 - Classification
 ========================
 
+`Class 3 notebook <http://nbviewer.ipython.org/urls/bitbucket.org/cmutel/brightway2/raw/2.0/notebooks/2015%20LCA%20Seminar%20-%20Class%203%20-%20Clustering.ipynb>`__
+
 In this class we link a physics model of motorcycle dynamics with ecoinvent, and use a few of the functions from `scikit-learn <http://scikit-learn.org/>`__ to classify the motorcycles in our database.
+
+Class 4- Hybrid LCA
+===================
+
+`Class 4 notebook <http://nbviewer.ipython.org/urls/bitbucket.org/cmutel/brightway2/raw/2.0/notebooks/2015%20LCA%20Seminar%20-%20Class%204%20-%20Hybrid%20LCA.ipynb>`__
+
+In this class we will import the `EXIOBASE 2.2 <http://exiobase.eu/>`__ industry by industry IO tables, and explore what hybrid LCA is and how it works.
