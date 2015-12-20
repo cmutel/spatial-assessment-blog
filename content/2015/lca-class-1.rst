@@ -66,9 +66,24 @@ Class 3 - Classification
 
 In this class we link a physics model of motorcycle dynamics with ecoinvent, and use a few of the functions from `scikit-learn <http://scikit-learn.org/>`__ to classify the motorcycles in our database.
 
-Class 4- Hybrid LCA
-===================
+Class 4 - Hybrid LCA
+====================
 
 `Class 4 notebook <http://nbviewer.ipython.org/urls/bitbucket.org/cmutel/brightway2/raw/2.0/notebooks/2015%20LCA%20Seminar%20-%20Class%204%20-%20Hybrid%20LCA.ipynb>`__
 
 In this class we will import the `EXIOBASE 2.2 <http://exiobase.eu/>`__ industry by industry IO tables, and explore what hybrid LCA is and how it works.
+
+Class 5 - Integration with transport modelling
+==============================================
+
+Class 5 includes some data, `so is available here <http://brightwaylca.org/data/class5.zip>`__.
+
+Class 6 - Energy system modelling
+=================================
+
+Class 6 includes even more data, `so is available here <http://brightwaylca.org/data/class6.zip>`__.
+
+Class 7 - Sensitivity analysis
+==============================
+
+Class 7 builds on class 5, and assumes you have have the data files available. It can be `viewed or downloaded here <http://nbviewer.ipython.org/urls/bitbucket.org/cmutel/brightway2/raw/2.0/notebooks/2015%20LCA%20Seminar%20-%20Class%207%20-%20Sensitivity%20analysis.ipynb>`__
