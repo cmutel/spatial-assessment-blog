@@ -5,6 +5,7 @@ Why we can't we all just get along?
 :category: data
 :slug: lca-data-exchange
 :summary: Reflections on the current state of LCA data interoperability
+:status: draft
 
 Ecospold is the data format for life cycle inventory and impact assessment data developed for the `Ecoinvent database <http://ecoinvent.org/>`_. It is an `XML <http://en.wikipedia.org/wiki/XML>`_ data format, with all the good and bad things that entails. Like many things in Ecoinvent, it was a good attempt at the time it was designed, but the numerous attempts to create a new data format show that it has not been a great format for data sharing. In this post, I want to explain the frustration of trying to work with Ecospold.
 
