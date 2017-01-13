@@ -39,7 +39,7 @@ PLUGINS = ["latex"]
 FEED_ATOM = 'feeds/all.atom.xml'
 FEED_RSS = False
 DISQUS_SITENAME = "spatialassessment"
-GOOGLE_ANALYTICS = "UA-36804441-1"
+# GOOGLE_ANALYTICS = "UA-36804441-1"
 
 TAG_URL = "tag/{slug}/"
 TAG_SAVE_AS = "tag/{slug}/index.html"
