@@ -133,6 +133,6 @@ Conclusion
 
 The new generation will introduce some backwards incompatibilities, but these changes will be well documented, and only made when there was a clear case for improvement. Code from Brightway2 will be reused whenever possible.
 
-The next generation of Brightway will be a large step on the journey towards a world of decentralized LCA applications that can interact with each other. The respective components of Brightway will truly be independent of one another, and the interfaces between Brightway libraries will be well defined for the first time. The result of these changes will be a software framework where it is much easier to build interfaces to other databases or storage concepts, and much easier to write user interfaces against a common, well-defined API.
+The next generation of Brightway will be a large step on the journey towards a world of decentralized LCA applications that can safely interact with each other. The respective components of Brightway will truly be independent of one another, and the interfaces between Brightway libraries will be well defined for the first time. The result of these changes will be a software framework where it is much easier to build interfaces to other databases or storage concepts, and much easier to write user interfaces against a common, well-defined API.
 
 The shift towards a more modular design with packages on Github should improve the ability of the LCA community to contribute to Brightway.
