@@ -1,27 +1,24 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
-
-# For Pelican version 3.0.1
-
-AUTHOR = u"Chris Mutel"
-SITENAME = u"Spatial Assessment"
-SITEURL = 'http://chris.mutel.org'
-SITESUBTITLE = "weblog of Chris Mutel"
+AUTHOR = "Chris Mutel"
+SITENAME = "Spatial Assessment"
+SITEURL = 'https://chris.mutel.org/'
+SITESUBTITLE = "Weblog of Chris Mutel"
+TIMEZONE = 'Europe/Paris'
+DEFAULT_LANG = 'en'
 TIMEZONE = 'Europe/Paris'
 
-DEFAULT_LANG = 'en'
+PATH = 'content'
+
 
 # Blogroll
 LINKS = (
-    ('Notable posts', 'http://chris.mutel.org/tag/notable/index.html'),
-    # ('ESD group', 'http://www.ifu.ethz.ch/ESD/index_EN'),
-    ('Me@ESD group', 'http://www.ifu.ethz.ch/ESD/people/cmutel/index_EN'),
-    ('Brightway2', 'http://brightwaylca.org'),
-    ('Source for this blog', 'https://bitbucket.org/cmutel/spatial-assessment-blog'),
-    ('My publications', 'http://scholar.google.ch/citations?user=SJiuf-MAAAAJ'),
-    ('My code', 'https://bitbucket.org/cmutel/'),
-    ('My talks', 'http://chris.mutel.org/tag/talks/index.html'),
-    ('My videos', 'https://www.youtube.com/user/chrismutel/videos'),
+    ('notable posts', 'https://chris.mutel.org/tag/notable/index.html'),
+    ('@PSI', 'https://www.psi.ch/ta/cmutel'),
+    ('Brightway2', 'https://brightwaylca.org'),
+    ('Ocelot', 'https://ocelot.space/'),
+    ('Wurst', 'https://github.com/IndEcol/wurst'),
+    ('publications', 'http://scholar.google.ch/citations?user=SJiuf-MAAAAJ'),
 )
 
 
@@ -31,15 +28,19 @@ LINKS = (
 
 DEFAULT_PAGINATION = 10
 STATIC_PATHS = ['images']
-TYPOGRIFY = False
-THEME = "theme"
-DISPLAY_PAGES_ON_MENU = False
-PLUGINS = ["latex"]
-# PLUGINS = ["render_math"]
-FEED_ATOM = 'feeds/all.atom.xml'
-FEED_RSS = False
+THEME = "alchemy"
+# DISPLAY_PAGES_ON_MENU = False
+PLUGIN_PATHS = ["pelican-plugins"]
+PLUGINS = ["render_math"]
+# FEED_ATOM = 'feeds/all.atom.xml'
+# FEED_RSS = False
 DISQUS_SITENAME = "spatialassessment"
+RELATIVE_URLS = False
 # GOOGLE_ANALYTICS = "UA-36804441-1"
 
 TAG_URL = "tag/{slug}/"
 TAG_SAVE_AS = "tag/{slug}/index.html"
+
+HIDE_AUTHORS = True
+
+SITEIMAGE = '/theme/image/map.png'
