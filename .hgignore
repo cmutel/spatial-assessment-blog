@@ -2,3 +2,4 @@ syntax: glob
 output
 *.pyc
 *.DS_Store
+notebooks/.ipynb_checkpoints
