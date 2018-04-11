@@ -39,10 +39,10 @@ Here is my personal wishlist for a new LCIA data format:
 Data Packages rescue us from the Tower of Babel
 ===============================================
 
-The challenges we face in LCA aren't unique - almost everyone is dealing with problems of data management and interchange. Because so many people are struggling with the same issues, there are also people working on these problems full-time, and producing simple, elegant solutions. The solution I have chosen for a new LCIA format is called `data package <https://frictionlessdata.io/data-packages/>`__, from the `Open Knowledge Foundation <https://okfn.org/>`__. They do a good job describing what a data package, so I will assume that you read their introduction. I first found out about data packages from the `Open Power System Data <https://open-power-system-data.org/>`__ (OPSD) project (which is in itself a great resource for LCA people), and both heard good things and saw for myself how this format could meet all the list objectives:
+The challenges we face in LCA aren't unique - almost everyone is dealing with problems of data management and interchange. Because so many people are struggling with the same issues, there are also people working on these problems full-time, and producing simple, elegant solutions. The solution I have chosen for a new LCIA format is called `data package <https://frictionlessdata.io/data-packages/>`__, from the `Open Knowledge Foundation <https://okfn.org/>`__. They do a good job describing what a data package is; you should just read their introduction. I first found out about data packages from the `Open Power System Data <https://open-power-system-data.org/>`__ (OPSD) project (which is itself a great resource for LCA people), and both heard good things and saw for myself how this format could meet all the listed objectives:
 
 * Software independency: Characterization factor (CF) data is stored in CSV, and metadata in JSON, both of which are *easily* consumed by every computer language.
-* Clear linking . The metadata specification can be adapted to allow these flows to be listed explicitly.
+* Clear linking. The metadata specification can be adapted to allow ecoinvent and ELCD flows to be listed explicitly.
 * Support for uncertainty distributions: No problem, especially when using standardized terms and definitions from the `UncertWeb project <https://wiki.aston.ac.uk/foswiki/bin/view/UncertWeb/UncertMLDictionary>`__.
 * Support for regionalization: Provided by the draft `Spatial Data Package <https://research.okfn.org/spatial-data-package-investigation/>`__.
 * Explicit licensing: Built into the data package standard.
@@ -67,14 +67,14 @@ However, when we add uncertainty information (even simple uncertainty informatio
 .. figure:: images/cf-spreadsheet-2.png
     :align: center
 
-The problem is that each column is not self-contained, but some columns refer to other columns. This is not allowed by the tabular data package standard, and for good reason. In a data interchange format, there is no need to compress multiple tables into a single file when you can give each file separately. In this example, the problem is that multiple impact categories (or, more precisely, multiple combinations of impact category, weighting, and normalization) are provided in the same file. This might be convenient to calculate or get an overview of the CFs, but can be avoided in a data interchange format. In the proposed format, each combination of spatial scale, uncertainty distribution, impact category, weighting, and normalization is a separate CSV file. A conformant CSV file would look like this:
+The problem is that each column is not self-contained, but some columns refer to other columns. This is not allowed by the tabular data package standard, and for good reason. In a data interchange format, there is no need to compress multiple tables into a single file when you can give each file separately. In this example, the problem is that multiple impact categories (or, more precisely, multiple combinations of impact category, weighting, and normalization) are provided in the same file. This might be convenient to calculate or get an overview of the CFs, but can be avoided in a data interchange format. In the proposed format, each combination of spatial scale, uncertainty distribution, impact category, weighting, and normalization is a separate CSV file. A CSV file conforming to this standard would look like this:
 
 .. figure:: images/cf-spreadsheet-3.png
     :align: center
 
 All the LCIA metadata is in the metadata file, in a standard fashion - no more writing custom parsers for each Excel workbook. The metadata also defines precisely what e.g. CFC-11 means, including the archetypes (category and subcategory). The metadata also defines exactly how to interpret each column heading.
 
-For analysis afterwards, it is pretty easy to either load multiple CSVs or join them together into a single Workbook. The OPSD makes `multiple versions of their data available <https://data.open-power-system-data.org/time_series/2018-03-13/>`__ (expand alternative file formats), some of which include multiindices; a centralized repository of LCIA data could also provide such conversion services on-demand.
+For analysis afterwards, it is pretty easy to either load multiple CSVs or join them together into a single Workbook. The OPSD makes `multiple versions of their data available <https://data.open-power-system-data.org/time_series/2018-03-13/>`__ (expand "Alternative file formats" on the linked webpage), some of which include multiindices; a centralized repository of LCIA data could also provide such conversion services on-demand.
 
 Labeling of uncertainty fields
 -------------------------------
