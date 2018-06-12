@@ -4,7 +4,7 @@ Why I am running for the BONSAI board
 :date: 2018-06-12 10:00
 :category: bonsai
 :slug: bonsai-candidacy
-:summary: How I think BONSAI can make concrete, practical
+:summary: How I think BONSAI can make a concrete, practical difference for industrial ecology
 
 .. figure:: images/lines.jpg
     :alt: Creative chaos, by Matvei Mutel
