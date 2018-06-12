@@ -17,7 +17,7 @@ LINKS = (
     ('@PSI', 'https://www.psi.ch/ta/cmutel'),
     ('Brightway2', 'https://brightwaylca.org'),
     ('Ocelot', 'https://ocelot.space/'),
-    ('Wurst', 'https://github.com/IndEcol/wurst'),
+    # ('Wurst', 'https://github.com/IndEcol/wurst'),
     ('publications', 'http://scholar.google.ch/citations?user=SJiuf-MAAAAJ'),
 )
 
