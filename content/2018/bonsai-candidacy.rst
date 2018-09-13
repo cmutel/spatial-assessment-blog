@@ -10,6 +10,8 @@ Why I am running for the BONSAI board
     :alt: Creative chaos, by Matvei Mutel
     :align: center
 
+*Update: I was elected to the BONSAI board for a three-year term on June 15, 2018.*
+
 `BONSAI <https://bonsai.uno>`__ (the big open network of sustainability assessment information) is an attempt to build an open and comprehensive database for industrial ecology. The project is funded by a large group of individual contributors, and `2.0 LCA consultants <https://lca-net.com/>`__. It has been underway since 2014, and has produced a `detailed workplan <https://github.com/BONSAMURAIS/bonsai/wiki>`__ and a series of smaller projects found on the `BONSAI Github page <https://github.com/BONSAMURAIS>`__.
 
 BONSAI will hold its annual general assembly tomorrow, and I am running for a position on the board. This wasn't an easy decision for me, as I am time- and focus-limited, and because BONSAI has not been given unconditional love by the broader LCA community. Nevertheless, I feel like BONSAI, or something like it, is an absolute necessity for making sustainability assessment scientific. Here is what I would like to contribute to the BONSAI project.
@@ -49,4 +51,4 @@ Bring people and projects together...
 
 ... instead of trying to do everything ourselves. A bit of humility never hurts! I think that the biggest potential for BONSAI is *not* to build a new database and modelling system, but rather to act as a coordinator for the many people, both inside and outside of BONSAI, who are all working towards different visions of the same goal. This isn't super exciting or sexy work, but is absolutely necessary. Despite all the collaborative IT tools we have, I know that there are many individuals and small groups outside of BONSAI who are working in parallel. In my opinion, The goal of BONSAI is not for BONSAI to be successful - it is to facilitate a better future both for researchers and for everyone else. When most people are working as volunteers, they want to do their own thing. BONSAI can help them do it more efficiently, and in the process add real value.
 
-
+**Disclaimer**: The opinions expressed in this article are my own, and do not reflect those of my employer in any way, shape, form, color, specie, etc.
