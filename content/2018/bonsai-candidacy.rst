@@ -10,7 +10,7 @@ Why I am running for the BONSAI board
     :alt: Creative chaos, by Matvei Mutel
     :align: center
 
-*Update: I was elected to the BONSAI board for a three-year term on June 15, 2018.*
+*Update: I was elected chairman of the BONSAI board on October 1, 2018.*
 
 `BONSAI <https://bonsai.uno>`__ (the big open network of sustainability assessment information) is an attempt to build an open and comprehensive database for industrial ecology. The project is funded by a large group of individual contributors, and `2.0 LCA consultants <https://lca-net.com/>`__. It has been underway since 2014, and has produced a `detailed workplan <https://github.com/BONSAMURAIS/bonsai/wiki>`__ and a series of smaller projects found on the `BONSAI Github page <https://github.com/BONSAMURAIS>`__.
 
