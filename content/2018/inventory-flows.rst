@@ -59,7 +59,7 @@ Custom flows and LCIA methods
 However, this isn't so elegant. Another way, and one that I prefer, is to add new biosphere flows for the quantities we are interested in. There are a couple reasons to prefer this approach:
 
 * It fits into the standard LCA calculation framework for contribution analysis and graph traversal.
-* It allows us to weight some quantities more than others - for example, instead of summing the total biomass, you could sum it's exergetic value, or each alloying elements in each kind of steel.
+* It allows us to weight some quantities more than others - for example, instead of summing the total biomass, you could sum it's exergetic value, or each alloying element in each kind of steel.
 * It can be easily shared with others, just like any other LCIA method.
 
 On the other hand, it does require making modifications to the background database, which is normally avoided when possible.
@@ -114,9 +114,12 @@ Avoiding double counting
 .. figure:: images/circular-flows.png
     :align: center
 
-Imagine a system like the one above, where you wanted to calculate the steel needed electricity, coal, and steel separately. Because there are loops in this graph, doing three separate calculations would lead to double counting: the steel for electricity would include the steel for the coal, but we also calculate the steel for the coal by itself. Similarly, demand for coal induces demand for electricity through steel production.
+Imagine a system like the one above, where you wanted to calculate the steel needed for the electricity, coal, and steel production separately. Because there are loops in this graph, doing three separate calculations would lead to double counting: the steel for electricity would include the steel for the coal, but we also calculate the steel for the coal by itself. Similarly, demand for coal induces demand for electricity through steel production.
 
 There are a number of ways to avoid double counting, including an approach that I `wrote about earlier <https://chris.mutel.org/slicing-dicing-fun.html>`__ that uses `Wurst <https://github.com/IndEcol/wurst>`__ to break these dependencies. However, this approach writes a complete new database, which is relatively expensive, especially done more than once. Instead, we can solve this problem by directly modifying the technosphere matrix.
+
+A simplified example
+--------------------
 
 .. figure:: images/steel-flows-a.png
     :align: center
@@ -128,7 +131,7 @@ If we built a technosphere matrix, it would look like this:
 .. figure:: images/steel-matrix-with.png
     :align: center
 
-To be able to separate calculate the steel demand for electricity and coal, we need to sever the connection between them:
+To be able to separate calculate the steel demand for A and B, we need to sever the connection between them:
 
 .. figure:: images/steel-matrix-without.png
     :align: center
@@ -139,7 +142,7 @@ Given a set of activities for which we want to calculate separate material flows
 
 .. math::
 
-    \hat{A}_{\alpha \in activities} = A \mid ( A_{i \in \{ activities \setminus \alpha \}, j} = 0 )
+    \hat{A}_{\alpha \in activities} = A \mid ( A_{i \in \{ activities \setminus \alpha \}, \: j \neq i} = 0 )
 
 Implementation in Brightway
 ---------------------------
@@ -217,21 +220,21 @@ We can then calculate the respective steel inputs in these three areas:
 How can there be more than one kilogram of steel in one kilogram of glider?
 ---------------------------------------------------------------------------
 
-According to ecoinvent 3.5, cutoff system model, one needs 1.136 kilograms of steel to make one kilogram of glider. HOw is this possible? One explanation could that there is steel needed in the various infrastructure elements used to make the glider, such as the factory, the iron ore mine, and the transportation grid. However, the main driver of this result is the cutoff system model, which "cuts off" credit for recycling. If we look into the processes used for glider production which have the highest steel losses (see the `notebook for details <http://example.com>`__), we see that we have losses in steel working activities, such as:
+According to ecoinvent 3.5, cutoff system model, one needs 1.136 kilograms of steel to make one kilogram of glider. How is this possible? One explanation could that there is steel needed in the various infrastructure elements used to make the glider, such as the factory, the iron ore mine, and the transportation grid. However, the main driver of this result is the cutoff system model, which "cuts off" credit for recycling. If we look into the processes used for glider production which have the highest steel losses (see the `notebook for details <https://nbviewer.jupyter.org/urls/bitbucket.org/cmutel/spatial-assessment-blog/raw/default/notebooks/Efficiently%20calculating%20inventory%20parameters.ipynb>`__), we see that we have losses in steel working activities, such as:
 
 * steel production, chromium steel 18/8, hot rolled: 7.7% loss
 * steel production, low-alloyed, hot rolled: 6.1%
 
 It is the compounding of these losses that add up to 13.6%.
 
-Of course, this steel does not just disappear - it is gathered, sorted, and recycled. But in the cutoff system model, there is no credit for producing recyclable materials, so they are removed from the supply chain graph. Ironically, this removal is mathematically the same as our procedure to avoid double counting. The cutoff model also has another somewhat ironic effect - a lot of our steel comes from electric arc furnaces, which are consuming recyclable iron scrap, which is itself cut off from iron production. Though we tend to use the cutoff system model as our default ecoinvent variant, it is clear that it is not a great choice to tracing material flows.
+Of course, this steel does not just disappear - it is gathered, sorted, and recycled. But in the cutoff system model, there is no credit for producing recyclable materials, so they are removed from the supply chain graph. Ironically, this removal is mathematically the same as our procedure to avoid double counting. The cutoff model also has another somewhat ironic effect - a lot of our steel comes from electric arc furnaces, which are consuming recyclable iron scrap, which is itself cut off from iron production. Though we tend to use the cutoff system model as our default ecoinvent variant, it is clear that it is not a great choice when tracing material flows.
 
 Example: Truck transport without light duty vehicles
 ----------------------------------------------------
 
 Light duty vehicles (LDVs) have gross vehicle weights (i.e. the weight of the truck and its cargo) of less than 8 tons. They also have a different usage pattern than heavier trucks, as there are a number of service vehicles included in this weight class. Many models therefore separate light and heavy duty vehicles.
 
-In ecoinvent, this weight class is labelled "3.5-7.5 ton".
+In ecoinvent, this weight class is labelled "3.5-7.5 ton."
 
 We can see the steel input for all truck transport (measured in ton-kilometers), and separately for LDVs, following out pattern above:
 
@@ -291,4 +294,4 @@ Conclusions
 
 The choice of ecoinvent system model plays a large role in material flow results. We (or, at least, I) need to think more about whether the allocation at point of substitution (APOS) system model would be adequate for material flow analysis, or if we need to develop a new system model.
 
-We have previously used `Wurst <https://github.com/IndEcol/wurst>`__ to create entirely new databases with the modifications we want, and here manipulate the technosphere matrix directly. The approach presented here is more computationally efficient, but would not work well for some research questions. It is more transparent to have each type of manipulation isolated as a separate, testable function, and changes using Wurst can use additional metadata not otherwise available in the technosphere matrix. It can also be useful to have a copy of the modified database to share or inspect later. Though the research question and project audience will influence the choice of method, the availability of high-quality, flexible, and user-friendly open source LCA software is what makes such choices possible.
+We have previously used `Wurst <https://github.com/IndEcol/wurst>`__ to create entirely new databases with the modifications we want. Here, we manipulate the technosphere matrix directly instead. Direct manipulation is more computationally efficient, but would not work well for some research questions. It is more transparent to have each type of manipulation isolated as a separate, testable function, and changes using Wurst can use additional metadata not otherwise available in the technosphere matrix. It can also be useful to have a copy of the modified database to share or inspect later. Though the research question and project audience will drive the ultimate choice of method, the availability of high-quality, flexible, and user-friendly open source LCA software is what makes such choices possible in the first place.
