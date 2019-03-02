@@ -16,7 +16,8 @@ LINKS = (
     ('notable posts', 'https://chris.mutel.org/tag/notable/index.html'),
     ('@PSI', 'https://www.psi.ch/ta/cmutel'),
     ('Brightway2', 'https://brightwaylca.org'),
-    ('Ocelot', 'https://ocelot.space/'),
+    ('BONSAI', 'https://github.com/BONSAMURAIS'),
+    # ('Ocelot', 'https://ocelot.space/'),
     # ('Wurst', 'https://github.com/IndEcol/wurst'),
     ('publications', 'http://scholar.google.ch/citations?user=SJiuf-MAAAAJ'),
 )
