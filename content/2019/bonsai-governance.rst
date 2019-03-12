@@ -12,6 +12,8 @@ Governance structure of BONSAI
 
     BONSAI will be what we make it
 
+*Note: See update at the bottom of this post*.
+
 BONSAI has a goal of creating a better industrial ecology database. We start with the conviction that open science (open source models, open data pipelines, open access publishing) is a clear improvement over what is available today. However, there is another important area where BONSAI needs to do a better job at being open: the management of the project.
 
 Legally, the BONSAI association is a non-profit headquartered in Denmark. Here are the `operating statues <https://bonsai.uno/files/statutes.pdf>`__, which give a large degree of power to the board, and in particular to the chair (me) and vice-chair (Bo Weidema). But the BONSAI project is much broader than the few people who pay membership dues or serve on the board - indeed, most of the `hackathon participants <https://github.com/BONSAMURAIS/hackathon-2019/blob/master/Participants.md>`__ meet neither of these criteria, and it feels weird that people who are volunteering a full week's work won't get a vote in the BONSAI legal entity. Currently, the annual fee for members is €150, and I guess there aren't that many paying members, as membership dues accounted for `only €313 in 2017 <https://bonsai.uno/wp-content/uploads/Minutes-of-GA-2018.pdf>`__. High membership fees deter participation; at the next general assembly, I will propose that the membership fee be significantly lowered, and waived for participants in BONSAI activities.
@@ -27,3 +29,21 @@ BONSAI also has an inclusivity problem in its management. Here is the `board <ht
 For the hackathon, we are using the `code of conduct <https://github.com/BONSAMURAIS/hackathon-2019/blob/master/Code-of-conduct.md>`__ developed by the group `Contributor Covenant <https://www.contributor-covenant.org/>`__, and I will propose that this code be the default for BONSAI activities. However, given the power that the board, and in particular the chair (still me) has, I think it would make sense to appoint a neutral ombudsman who can effectively mediate disputes.
 
 The process of building a more inclusive and open organization will be a long journey, and we will get many things wrong. The best way you can help is to let us know when we could do things better. You are BONSAI, and your voice matters.
+
+March 2019 Update
+-----------------
+
+At the BONSAI board meeting on March 12, 2019, the following decisions were taken:
+
+* The BONSAI board is making an open call for new board members, and especially welcomes applications that would promote diversity.
+* The treasurer's report to the general assembly will be public (as in previous years), and will have more detail than before.
+* A code of conduct will be required for all BONSAI activities, with the Contributor Covenant being the default.
+* Membership fees were reduced to €50, effective immediately, for active members. Active membership has to be certified by one of the board members. The legal entity BONSAI has annual maintenance costs, so reaching consensus on dramatically reduced fees proved impossible.
+* Live-streaming the general assembly would be rather expensive, at least with our `current videoconference provider <https://zoom.us/>`__. We aren't sure yet, but recording and then posting the general assembly would be one alternative to make these deliberations more transparent.
+
+In addition, I have launched a formal `community decision making standard <https://github.com/BONSAMURAIS/enhancements/blob/master/beps/0002-bonsai-project-community-governance-structure.md>`__ which is completely independent of the legal non-profit organization BONSAI.
+
+Edit history
+------------
+
+* 2019-03-12: Added results from March 2019 board meeting
