@@ -32,10 +32,12 @@ Validation
 
 **Quality assurance**: Checks reasonableness of input data, as much as possible. Mass and economic balances, uncertainty data, etc.
 
-Jena database instance
-======================
+RDF triplestore
+===============
 
-Apache `Jena <https://jena.apache.org/>`__ is a RDF database.
+The master database that stores data following the BONSAI ontology. Unclear at this stage if we will include much logic in the database itself; it might be easiest for the current group to extract data, process in e.g. Python, and then write the processed data back to the triplestore.
+
+An instance of Apache `Jena <https://jena.apache.org/>`__ for BONSAI is already running at the University of Aalborg.
 
 Standards
 =========
@@ -84,3 +86,8 @@ Limitations
 ===========
 
 This is a first draft of what BONSAI could look like, and is dependent on what the community wants to build. I have developed a draft formal process for `community decision-making <https://github.com/BONSAMURAIS/enhancements/blob/master/beps/0002-bonsai-project-community-governance-structure.md>`__, and this may or may not be adopted. In any case, BONSAI is built by people volunteering their time and ideas.
+
+Edit history
+============
+
+* 2019-03-12: Changed description of RDF database. Thanks to Matteo Lissandrini for the comment!
