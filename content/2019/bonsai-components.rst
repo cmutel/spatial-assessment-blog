@@ -1,7 +1,7 @@
 Modular BONSAI components
 #########################
 
-:date: 2019-03-011-09:00
+:date: 2019-03-11-09:00
 :category: bonsai
 :slug: bonsai-components
 :summary: A preliminary layout for modular BONSAI components
