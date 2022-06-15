@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*- #
 AUTHOR = "Chris Mutel"
 SITENAME = "Spatial Assessment"
-SITEURL = 'https://chris.mutel.org/'
+SITEURL = 'https://chris.mutel.org'
 SITESUBTITLE = "Weblog of Chris Mutel"
 TIMEZONE = 'Europe/Paris'
 DEFAULT_LANG = 'en'
@@ -13,13 +13,11 @@ PATH = 'content'
 
 # Blogroll
 LINKS = (
-    ('notable posts', 'https://chris.mutel.org/tag/notable/index.html'),
-    ('@PSI', 'https://www.psi.ch/ta/cmutel'),
-    ('Brightway2', 'https://brightwaylca.org'),
-    ('BONSAI', 'https://github.com/BONSAMURAIS'),
-    # ('Ocelot', 'https://ocelot.space/'),
-    # ('Wurst', 'https://github.com/IndEcol/wurst'),
-    ('publications', 'http://scholar.google.ch/citations?user=SJiuf-MAAAAJ'),
+    ('Notable posts', 'https://chris.mutel.org/tag/notable/index.html'),
+    ('PSI', 'https://www.psi.ch/ta/cmutel'),
+    ('Brightway', 'https://brightwaylca.org'),
+    ('Cauldron', 'https://cauldron.ch/'),
+    ('Publications', 'http://scholar.google.ch/citations?user=SJiuf-MAAAAJ'),
 )
 
 
