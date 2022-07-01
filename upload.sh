@@ -1,2 +1,2 @@
 #!/bin/bash
-rsync -zvr output/ 129.132.117.28:websites/chris.mutel.org/
+rsync -zvr output/ vultr:websites/chris.mutel.org/
