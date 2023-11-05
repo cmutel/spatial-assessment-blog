@@ -15,7 +15,7 @@ PATH = 'content'
 LINKS = (
     ('Notable posts', 'https://chris.mutel.org/tag/notable/index.html'),
     ('PSI', 'https://www.psi.ch/ta/cmutel'),
-    ('Brightway', 'https://brightwaylca.org'),
+    ('Brightway', 'https://brightway.dev'),
     ('Cauldron', 'https://cauldron.ch/'),
     ('Publications', 'http://scholar.google.ch/citations?user=SJiuf-MAAAAJ'),
 )
