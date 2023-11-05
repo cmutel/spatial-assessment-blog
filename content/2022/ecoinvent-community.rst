@@ -31,7 +31,7 @@ That was pretty vanilla, let's make it a bit spicier. The ecoinvent centre is an
 
 And:
 
-4. Minutes of the ecoinvent general assembly, expert working groups, and other official meetings should be made public.
+4. Minutes of the ecoinvent expert working groups, and other non-sensitive meetings should be made public.
 
 Decisions by ecoinvent staff on specific datasets, and on broader system modelling aspects, have a huge impact on users of the ecoinvent database. It would be nice for researchers, and reassuring for the broader community, to have these decisions explained in a formal way. For example, the Brightway community has a `proposal template <https://github.com/brightway-lca/enhancement-proposals/blob/main/proposals/0001-bep-template.md>`__ for any change which adds a substantial new feature or makes a breaking change. The Brightway template (based on the `Python template <https://peps.python.org/pep-0012/>`__), includes alternatives to the option selected, reasons for rejecting the alternatives, and a testing strategy for ensuring that the chosen solution will work as expected. One could even have a comment period for broader public input if you want to really embrace community engagement. Such a decision-making template would help ecoinvent communicate the details of changes which affect everyone. A recent example of such a change is the addition of a new system model, `EN15804 <https://eplca.jrc.ec.europa.eu/LCDN/EN15804.xhtml>`__ - I am quite confidant that the implementation of this model involved some subjective decisions which would be of extreme interest to people like myself, but are (AFAICT) currently locked in proprietary computer code.
 
