@@ -14,10 +14,11 @@ PATH = 'content'
 # Blogroll
 LINKS = (
     ('Notable posts', 'https://chris.mutel.org/tag/notable/index.html'),
-    ('PSI', 'https://www.psi.ch/ta/cmutel'),
-    ('Brightway', 'https://brightway.dev'),
+    ('EI', 'https://ecoinvent.org/'),
+    ('DdS', 'https://www.d-d-s.ch/'),
+    ('Brightway', 'https://brightwaylca.org'),
     ('Cauldron', 'https://cauldron.ch/'),
-    ('Publications', 'http://scholar.google.ch/citations?user=SJiuf-MAAAAJ'),
+    ('Papers', 'http://scholar.google.ch/citations?user=SJiuf-MAAAAJ'),
 )
 
 
