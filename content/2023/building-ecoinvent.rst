@@ -11,7 +11,7 @@ You just got an ecoinvent license. Now what?
     :width: 480 px
     :alt: XML supply chain madness
 
-Note: This is part one of a series on working with ecoinvent. Next week will be matrix construction and LCA calculations.
+Note: This is part one of a series on working with ecoinvent. Next week will be matrix construction and LCA calculations. All code given here is `also available as a Jupyter notebook <https://github.com/cmutel/spatial-assessment-blog/blob/master/notebooks/How%20to%20use%20ecoinvent.ipynb>`__.
 
 Working the the ecoinvent `ecospold2 files <https://ecoinvent.org/the-ecoinvent-database/data-formats/ecospold2/>`__ isn't easy. This is a step by step guide to using this data. You must have an ecoinvent license to do the steps listed here.
 
@@ -24,7 +24,7 @@ First, let's create a new `virtual environment <https://docs.python.org/3/librar
 
     python -m venv virtualenvs/ecoinvent
 
-Next, we need to activate that environment. This command also varies by operating system. We can also install some helper libraries:
+Next, we need to activate that environment. This command also varies by operating system. We can also install some helper libraries, and especially `ecoinvent_interface <https://github.com/brightway-lca/ecoinvent_interface>`__:
 
 .. code-block:: bash
 
@@ -501,6 +501,9 @@ Finally, we can iterate over all inventory datasets:
         product_nodes[this_product_id] = (this_process, this_product)
 
         for edge in ecospold.activityDataset.flowData.intermediateExchanges:
+            if not edge.amount:
+                continue
+
             other_process = activity_mapping[get_process_id(edge=edge, activity=activity)]
             other_product = product_mapping[edge.intermediateExchangeId]
             other_product_id = unique_identifier(other_process, other_product, "product")
@@ -578,6 +581,20 @@ This is already a decent format, though we would need to link the ecosphere flow
 
     for obj in characterization_factors.values.tolist():
         impact_categories[tuple(obj[:3])]['unit'] = obj[3]
+
+Version history
+=============================
+
+V2 (2023-11-06)
+---------------
+
+* Skip technosphere edges with amount ``0``
+* Condense code to a single class in Notebook
+
+V1 (2023-11-05)
+---------------
+
+Initial publication
 
 Footnotes
 =========
