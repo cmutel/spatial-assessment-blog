@@ -1,6 +1,6 @@
 # Spatial Assessment Blog
 
-Source for [chris.mutel.org](https://chris.mutel.org) — a Pelican static site about life cycle assessment, Brightway, and ecoinvent.
+Source for [chris.mutel.org](https://chris.mutel.org) — a Pelican static site about life cycle assessment and Brightway.
 
 ## Setup
 
