@@ -14,7 +14,6 @@ PATH = 'content'
 # Blogroll
 LINKS = (
     ('Notable posts', 'https://chris.mutel.org/tag/notable/index.html'),
-    ('EI', 'https://ecoinvent.org/'),
     ('DdS', 'https://www.d-d-s.ch/'),
     ('Brightway', 'https://brightwaylca.org'),
     ('Cauldron', 'https://cauldron.ch/'),
