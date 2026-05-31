@@ -27,7 +27,8 @@ LINKS = (
 #           ('Another social link', '#'),)
 
 DEFAULT_PAGINATION = 10
-STATIC_PATHS = ['images']
+STATIC_PATHS = ['images', 'extra']
+EXTRA_PATH_METADATA = {'extra/CNAME': {'path': 'CNAME'}}
 THEME = "alchemy"
 # DISPLAY_PAGES_ON_MENU = False
 PLUGIN_PATHS = ["plugins"]
