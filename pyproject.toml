@@ -1,0 +1,10 @@
+[project]
+name = "spatial-assessment-blog"
+version = "0.1.0"
+description = "Spatial Assessment blog"
+requires-python = ">=3.12"
+dependencies = [
+    "pelican[markdown]>=4.12",
+    "beautifulsoup4>=4.12",
+    "ghp-import>=2.1",
+]
